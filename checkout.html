@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./mirror-fashion/css/reset.css">
+    <link rel="stylesheet" href="mirror-fashion/css/sobre.css">
+    <link rel="stylesheet" href="mirror-fashion/css/menu.css">
+    <link rel="stylesheet" href="mirror-fashion/css/produto.css">
+    <link rel="stylesheet" href="../mirrorFashion/mirror-fashion/css/bootstrap.css">
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.css">
+    <link rel="stylesheet" href="../mirrorFashion/mirror-fashion/css/checkout.css">
+    <title>Mirror Fashion</title>
+</head>
+<body>
+    <header class="container">
+        <h1><img src="../mirrorFashion/mirror-fashion/img/logo.png" alt="Logo da Mirror Fashion"></h1>
+        <p class="home__itens">Nenhum item na sacola de compras </p>
+        <nav class="home__options">
+            <ul>    
+                <li><a href="#">Sua Conta</a></li>
+                <li><a href="#">Lista de desejos</a></li>
+                <li><a href="#">Cartão Fidelidade</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Ajuda</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Ótima escolha</h1>
+            <p class="lead">Obrigada por comprar na mirror-fashion!
+                Preencha seus dados para efetivar as compras.</p>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card-header">
+                        <h3>Sua compra</h3>
+                    </div>
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="qtd">Quantidade</label>
+                                <input type="number" id="qtd" min="1" max="99" value="1" class="form-control">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="total">total:</label>
+                                <output for="qtd preco" id="total" class="form-control">R$:48,95</output>
+                            </div>  
+                        </div>
+                    </div>
+                    <img src="../mirrorFashion/mirror-fashion/img/produtos/foto2-verde.png" alt="camiseta verde" class="img-thumbnail mb-3">
+                    <dl>
+                        <dt>Produto</dt>
+                        <dd>Camiseta Ecko Caveira</dd>
+                    
+                        <dt>Cor</dt>
+                        <dd>Verde</dd>
+
+                        <dt>Tamanho</dt>
+                        <dd>42</dd>
+
+                        <dt>Preço</dt>
+                        <dd id="preco">R$: 48,95</dd>
+                    </dl>
+                </div>
+            </div>
+            <form>
+                <div class="row">
+                    <fieldset class="col-lg-6">
+                        <legend>Dados Pessoais</legend>
+
+                        <div class="form-group">
+                            <label for="email">Nome Completo</label>
+                            <input type="text" class="form-control" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="text" class="form-control" id="email" name="email">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="cpf">cpf</label>
+                            <input type="number" class="form-control" id="cpf" name="cpf" required>
+                        </div>
+
+                        <div class="form-group custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="newsletter" value="sim" checked>
+                            <label class="custom-control-label" for="newsletter">
+                                Quero receber newsletter da mirror-fashion
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="col-lg-6">
+                        <legend>Cartão de crédito</legend>
+
+                        <div class="form-group">
+                            <label for="numero-cartao">Numero - CVV</label>
+                            <input type="text" class="form-control" id="numero-cartao" name="numero-cartao">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="bandeira-cartao">Bandeira</label>
+                            <select class="custom-select" id="bandeira-cartao">
+                                <option disabled selected>Selecione uma opção</option>
+                                <option value="master">MasterCard</option>
+                                <option value="visa">VISA</option>
+                                <option value="amex">American Express</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="validade-cartao">Validade</label>
+                            <input type="month" class="form-control" id="validade-cartao" name="validade-cartao">
+                        </div>
+                    </fieldset>
+                    <div class="col-lg-6">
+                        <button type="submit" class="btn btn-primary mb-3 btn-lg">Confirmar pedido</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript" src="../mirrorFashion/mirror-fashion/js/total.js"></script>
+</body>
+</html>
