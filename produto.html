@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./mirror-fashion/css/reset.css">
+    <link rel="stylesheet" href="mirror-fashion/css/sobre.css">
+    <link rel="stylesheet" href="mirror-fashion/css/menu.css">
+    <link rel="stylesheet" href="mirror-fashion/css/produto.css">
+
+    <title>Mirror Fashion</title>
+</head>
+<body>
+    <header class="container">
+        <h1><img src="../mirrorFashion/mirror-fashion/img/logo.png" alt="Logo da Mirror Fashion"></h1>
+    <p class="home__itens">Nenhum item na sacola de compras </p>
+    <nav class="home__options">
+        <ul>    
+            <li><a href="#">Sua Conta</a></li>
+            <li><a href="#">Lista de desejos</a></li>
+            <li><a href="#">Cartão Fidelidade</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Ajuda</a></li>
+        </ul>
+    </nav>
+    </header>
+    <div class="container">
+    <section class="produto">
+        <h2>Camisa Ecko Caveira Bad to the Bone</h2>
+        <p>por apenas R$ 48,95 </p>
+
+    <form action="checkout.html" method="POST">
+        <fieldset class="cores">
+            <legend>Escolha a cor:</legend>
+            <input type="radio" name="cor" value="rosa" id="rosa">
+            <label for="rosa">
+                <img src="../mirrorFashion/mirror-fashion/img/produtos/foto1-rosa.png">
+            </label>
+
+            <input type="radio" name="cor" value="verde" id="verde">
+            <label for="verde">
+                <img src="../mirrorFashion/mirror-fashion/img/produtos/foto1-verde.png">
+            </label>
+
+            <input type="radio" name="cor" value="azul" id="azul">
+            <label for="azul">
+                <img src="../mirrorFashion/mirror-fashion/img/produtos/foto1-azul.png">
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Escolha o tamanho:</legend>
+            <input type="range" min="36" max="46" value="42" step="2" name="tamanho" id="tamanho">
+            <output class="tamanhos" for="tamanho" name="valortamanho">42</output>
+        </fieldset>
+
+        <button class="comprar">Comprar</button>
+    </form>
+    </section>
+    <div class="container">
+    <section class="detalhes">
+        <h2>Detalhes do produto</h2>
+
+        <p>Camiseta confortavel ideal para eventos casuais</p>
+        <p>Camiseta manga curta, gola redonda. Possui estampa de caveira e ddescritivo frontal e lisa nas costas.</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Caracteristicas</th>
+                    <th>Detalhes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Modelo</td>
+                    <td>Camiseta Ecko caveira</td>
+                </tr>
+                <tr>
+                    <td>Material</td>
+                    <td>Algodão poliester</td>
+                </tr>
+                <tr>
+                    <td>Cores</td>
+                    <td>Verde, Rosa e azul</td>
+                </tr>
+                <tr>
+                    <td>Lavagem</td>
+                    <td>Lavar a mão</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    </div>
+    
+</div>
+
+<script type="text/javascript" src="../mirrorFashion/mirror-fashion/js/produto.js"></script>
+</body>
+</html>

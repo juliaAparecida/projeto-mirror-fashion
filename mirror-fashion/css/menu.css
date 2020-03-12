@@ -1,0 +1,272 @@
+body {
+    color: #333333;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif";
+}
+
+header {
+    position: relative;
+}
+
+.container {
+    margin: 0 auto;
+    width: 940px;
+}
+
+
+.home__itens {
+    background-image: url(../img/sacola.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 14px;
+    text-align: right;
+    text-align: right;
+    padding: 8px 35px 0 0;
+}
+.home__options {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.home__options a {
+    color: black;
+    text-decoration: none;
+}
+
+.home__options ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.busca {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.busca,
+.menu__departamento {
+    background-color: #dcdcdc;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 230px;
+    float: left;
+}
+
+.menu__departamento {
+    clear: left;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+.busca h2 ,
+.busca form,
+.menu__departamento h2 {
+    margin: 10px;
+}
+
+.menu__departamento li {
+    background-color: white;
+    margin-bottom: 1px;
+    padding: 5px 10px;   
+}
+
+.menu__departamento a {
+    color: black;
+    text-decoration: none;
+}
+
+.busca input[type=search] {
+    width: 170px;
+}
+
+.busca button {
+    background-image: url(../img/busca.png);
+    background-repeat: no-repeat;
+    border: none;
+    color: transparent;
+    margin-top: .8rem;
+    width: 20px;
+    height: 20px;
+}
+.destaque {
+    margin-top: 10px;
+}
+
+.painel {
+    border-radius: 4px;
+    box-shadow: 1px 1px 4px #999;
+    margin: 10px 0;
+    padding: 10px;
+    width: 445px;
+}
+
+.painel h2 {
+    font-size: 2rem;
+    text-transform: uppercase;  
+    font-weight: bold;
+    text-shadow: 3px 3px 2px rgba(255, 255, 255, 0.8);
+    margin: 0 0 1rem .3rem;
+}
+
+.painel a {
+    color: #333;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none   ;
+}
+
+.painel li:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 5px #333;
+    transition: 0.7s;
+    transform: scale(1.2) rotate(-5deg);
+}
+
+.painel li:nth-child(2n):hover {
+    transform: scale(1.2) rotate(5deg);
+}
+
+.paineis {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex {
+    display: flex;
+}
+
+.space__between{
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.flex__card {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.flex li {
+    width: 32%;
+}
+
+.novidades {
+    background-color: #f5dcdc;
+    background: linear-gradient(#f5dcdc, #bebef4);
+    display: flex;
+    justify-content: space-around;
+    margin: 1.5rem  0;
+}
+
+.mais__vendidos {
+    background-color: #7b7ba7;
+    background: linear-gradient(#dcdcf5, #f4bebe);
+}
+
+footer {
+    background-image: url(../img/fundo-rodape.png);
+    display: flex;
+}
+
+.social__media {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.social__media a {
+    color: transparent;
+    align-items: flex-end;
+}
+
+.social__media a[href*="facebook.com"] {
+    background-image: url(../img/facebook.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.social__media a[href*="twitter.com"] {
+    background-image: url(../img/twitter.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.social__media a[href*="plus.google.com"] {
+    background-image: url(../img/googleplus.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.menu__opcoes {
+    color: blue;
+}
+
+.menu__departamento li ul {
+    display: none;
+}
+
+.menu__departamento li:hover ul {
+    display: block;
+}
+
+.menu__departamento ul ul li {
+    background-color: #dcdcdc;
+}
+
+.menu__departamento li li a::before {
+    content: '-';
+}
+
+@media (max-width: 320px) {
+    .container {
+        width: 96%;
+    }
+
+    header h1 {
+        text-align: center;
+    }
+
+    header h1 img {
+        max-width: 50%;
+    }
+
+    .home__itens {
+        display: none;
+    }
+
+    .menu__opcoes {
+        position: static;
+        text-align: center;
+    }
+
+    .menu__opcoes ul li {
+        display: inline-block;
+        margin: 5px;
+    }
+    .busca,
+    .menu__departamento,
+    .destaque img {
+        margin-right: 0;
+        width: 100%;
+}
+    .painel {
+        width: auto;
+    }
+
+    .painel li {
+        width: 30%;
+    }
+
+    .painel img {
+        width: 100%;
+    }
+
+    .novidades {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+
+}
